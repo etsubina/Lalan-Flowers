@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lala's Flower Garden - Full Screen</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .feedback-section {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fffafb;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(224, 182, 189, 0.3);
+            font-family: Arial, sans-serif;
+            border: 1px solid #f3e1e4;
+        }
+
+        .feedback-section h2 {
+            text-align: center;
+            color: #d47a8a;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #e0b6bd;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #d47a8a;
+            box-shadow: 0 0 5px rgba(212, 122, 138, 0.3);
+        }
+
+        .rating-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .rating-container input[type="range"] {
+            flex: 1;
+            accent-color: #d47a8a;
+        }
+
+        .rating-value {
+            font-size: 18px;
+            font-weight: bold;
+            color: #d47a8a;
+            min-width: 25px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #d47a8a;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #b86271;
+        }
+
+        #feedbackSuccess {
+            text-align: center;
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌸 LALA'S FLOWER 🌸</h1>
+        <p>Your favorite flower shop - Worldwide Delivery</p>
+    </header>
+
+    <div class="category-menu">
+        <a href="romantic_flower.html">ROMANTIC</a>
+        <a href="birth day_.html">BIRTHDAY</a>
+        <a href="wedding_.html">WEDDING</a>
+        <a href="congrats.html">CONGRATS</a>
+        <a href="office.html">OFFICE PLANTS</a>
+    </div>
+
+    <h2 id="romantic">Romantic Collection</h2>
+    <section class="flower-container">
+        <div class="flower-card">
+            <img src="img/beutiful flower.jpg" alt="flower">
+            <h3>Red Rose Bouquet</h3>
+            <p class="price">$45</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="flower-card">
+            <img src="img/best flower with gifts.jpg" alt="Tulips">
+            <h3>Pink Tulips</h3>
+            <p class="price">$22</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="flower-card">
+            <img src="img/beutiful flower.jpg" alt="Peony">
+            <h3>Soft Peony</h3>
+            <p class="price">$35</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="flower-card">
+            <img src="img/best flower with gifts.jpg" alt="light flower">
+            <h3>mixed flower</h3>
+            <p class="price">1200 birr</p>
+            <button class="buy-btn">Add to cart</button>
+        </div>
+
+        <div class="flower-card">
+            <img src="img/special flower.jpg" alt="flower">
+            <h3>light flower</h3>
+            <p class="price">1290 birr</p>
+            <button class="buy-btn">Add to cart</button>
+        </div>
+    </section>
+
+    <h2 id="birthday">Birthday Selection</h2>
+    <section class="flower-container">
+        <div class="flower-card">
+            <img src="img/birth day flower 1.jpg" alt="Sunflower">
+            <h3>Golden Sunflowers</h3>
+            <p class="price">$20</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="flower-card">
+            <img src="img/birth day flower 3.jpg" alt="Daisy">
+            <h3>Wild Daisy Mix</h3>
+            <p class="price">$18</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="flower-card">
+            <img src="img/birthday flower4.jpg" alt="Hydrangea">
+            <h3>Blue Hydrangea</h3>
+            <p class="price">$32</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+    </section>
+
+    <h2 id="wedding">Wedding Selection</h2>
+    <section class="flower-container">
+        <div class="flower-card">
+            <img src="img/etsub flower.jpg" alt="Orchid">
+            <h3>White Dream Orchids</h3>
+            <p class="price">$55</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="flower-card">
+            <img src="img/lala flower.jpg" alt="Calla Lily">
+            <h3>Royal Calla Lilies</h3>
+            <p class="price">$40</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="flower-card">
+            <img src="img/luxery flowers.jpg" alt="Bouquet">
+            <h3>Bridal Classic Mix</h3>
+            <p class="price">$65</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+    </section>
+
+    <h2 id="congrats">Congratulation Flowers</h2>
+    <section class="flower-container">
+        <div class="flower-card">
+            <img src="img/romatic flowers.jpg" alt="Carnations">
+            <h3>Colorful Carnations</h3>
+            <p class="price">$25</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="flower-card">
+            <img src="img/red flower.jpg" alt="Lilies">
+            <h3>Stargazer Lilies</h3>
+            <p class="price">$30</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="flower-card">
+            <img src="img/3a1b90a2adbda0841ed7bd4dbac8da34.jpg" alt="Lavender">
+            <h3>Scented Lavender</h3>
+            <p class="price">$15</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+    </section>
+
+    <h2 id="office">Office & Indoor Plants</h2>
+    <section class="flower-container">
+        <div class="flower-card">
+            <img src="img/special flower.jpg" alt="Monstera">
+            <h3>Modern Monstera</h3>
+            <p class="price">$35</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="flower-card">
+            <img src="img/white flowers.jpg" alt="Snake Plant">
+            <h3>Snake Plant Duo</h3>
+            <p class="price">$28</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="flower-card">
+            <img src="img/the.png" alt="Bonsai">
+            <h3>Zen Mini Bonsai</h3>
+            <p class="price">$80</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+    </section>
+    
+   <section class="feedback-section">
+    <h2>Sell Your Flowers on Our Platform 🌸</h2>
+    <p style="text-align: center; color: #666; margin-bottom: 20px;">Are you a supplier? Submit your flower details below!</p>
+    
+    <form id="flowerLinkSupplierForm" action="https://henoktadi.app.n8n.cloud/webhook-test/60650a93-2244-48cc-8a29-4befeda43f78" method="post">
+        <div class="form-group">
+            <label for="supplierName">Full Name / Farm Name</label>
+            <input type="text" id="supplierName" required placeholder="Your Name">
+        </div>
+
+        <div class="form-group">
+            <label for="supplierEmail">Email Address</label>
+            <input type="email" id="supplierEmail" required placeholder="name@example.com">
+        </div>
+
+        <div class="form-group">
+            <label for="supplierPhone">Phone Number</label>
+            <input type="text" id="supplierPhone" required placeholder="e.g. +251...">
+        </div>
+
+        <div class="form-group">
+            <label for="flowerType">Flower Type</label>
+            <input type="text" id="flowerType" required placeholder="e.g., Red Roses, White Lilies">
+        </div>
+
+        <div class="form-group">
+            <label for="flowerPrice">Asking Price</label>
+            <input type="text" id="flowerPrice" required placeholder="e.g., 500 birr">
+        </div>
+
+        <div class="form-group">
+            <label for="flowerImageLink">Flower Photo Link (URL)</label>
+            <input type="url" id="flowerImageLink" required placeholder="https://example.com/flower-image.jpg">
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Offer</button>
+    </form>
+
+    <div id="supplierLinkSuccess" style="display: none; text-align: center; color: #27ae60; font-weight: bold; font-size: 18px; padding: 20px;">
+        Offer submitted successfully! We will check your flower link shortly. 🌸
+    </div>
+</section>
+
+    <footer>
+        <p>Created by Lala - Future Tech Star 2026</p>
+    </footer>
+
+   <script>
+    document.getElementById('flowerLinkSupplierForm').addEventListener('submit', async function(event) {
+        event.preventDefault(); // Stop page reload
+
+        // 1. Package all the text fields together
+        const searchParams = new URLSearchParams();
+        searchParams.append('name', document.getElementById('supplierName').value);
+        searchParams.append('email', document.getElementById('supplierEmail').value);
+        searchParams.append('phone', document.getElementById('supplierPhone').value);
+        searchParams.append('flowerType', document.getElementById('flowerType').value);
+        searchParams.append('price', document.getElementById('flowerPrice').value);
+        searchParams.append('imageLink', document.getElementById('flowerImageLink').value); // The URL field
+
+        try {
+            // 2. Send data to your n8n webhook
+            const response = await fetch('https://henoktadi.app.n8n.cloud/webhook-test/60650a93-2244-48cc-8a29-4befeda43f78', {
+                method: 'POST',
+                mode: 'no-cors', 
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded' 
+                },
+                body: searchParams
+            });
+
+            // 3. Show beautiful green success message
+            document.getElementById('flowerLinkSupplierForm').style.display = 'none';
+            document.getElementById('supplierLinkSuccess').style.display = 'block';
+
+        } catch (error) {
+            console.error('Submission error:', error);
+            alert('Connection error. Could not send submission.');
+        }
+    });
+</script>
+
+</body>
+</html>

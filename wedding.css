@@ -1,0 +1,105 @@
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fffaf0 0%, #fff0e1 100%); /* soft cream + blush gradient */
+    color: #5D4037;             
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #fce4ec, #f8bbd0); /* blush pink gradient */
+    padding: 60px 0;
+    color: #4E342E;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Navigation bars */
+.category-menu, .nav-menu {
+    background-color: #fff0e1; /* soft champagne */
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    width: 100%;
+}
+
+/* Navigation links */
+.category-menu a, .nav-menu a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #b45f5f !important; /* warm muted red/pink */
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Flower container */
+.flower-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px; 
+    padding: 50px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Flower cards */
+.flower-card {
+    background: linear-gradient(145deg, #fff5f2, #ffe0dc); /* soft blush + cream gradient */
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 8px 18px rgba(255, 192, 203, 0.3); /* soft glow */
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.flower-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(255, 192, 203, 0.5); 
+}
+
+/* Flower images */
+.flower-card img {
+    width: 100%;
+    height: 240px; 
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Price */
+.price {
+    color: #b45f5f; /* warm pinkish accent */
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+/* Buy buttons */
+.buy-btn {
+    background: linear-gradient(90deg, #f8bbd0, #f48fb1); /* blush luxury button */
+    border: 1px solid #f06292;
+    color: #4E342E;
+    padding: 12px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(248, 187, 208, 0.4);
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background: linear-gradient(90deg, #f48fb1, #f06292);
+    box-shadow: 0 6px 15px rgba(244, 143, 177, 0.6);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #ffe0dc, #ffd1c1);
+    padding: 40px;
+    margin-top: 50px;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
+}

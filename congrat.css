@@ -1,0 +1,105 @@
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8 0%, #e3f2fd 100%);
+    color: #1a237e;             
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #3949ab, #5c6bc0);
+    padding: 50px 0; /* slightly smaller header */
+    color: white;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Navigation bars */
+.category-menu, .nav-menu {
+    background-color: #e8eaf6;
+    padding: 15px 0; /* smaller nav */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+/* Navigation links */
+.category-menu a, .nav-menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #1a237e !important;
+    font-weight: bold;
+    font-size: 0.95rem; /* slightly smaller font */
+}
+
+/* Flower container */
+.flower-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* same as wedding */
+    gap: 25px; 
+    padding: 50px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Flower cards */
+.flower-card {
+    background: linear-gradient(145deg, #ffffff, #c5cae9);
+    padding: 12px; /* smaller padding */
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(63, 81, 181, 0.3);
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.flower-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(63, 81, 181, 0.5); 
+}
+
+/* Flower images */
+.flower-card img {
+    width: 100%;
+    height: 200px; /* smaller height */
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Price */
+.price {
+    color: #1a237e;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+/* Buy buttons */
+.buy-btn {
+    background: linear-gradient(90deg, #3949ab, #5c6bc0);
+    border: none;
+    color: white;
+    padding: 10px 25px; /* slightly smaller */
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    box-shadow: 0 3px 8px rgba(63, 81, 181, 0.4);
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background: linear-gradient(90deg, #303f9f, #3f51b5);
+    box-shadow: 0 5px 12px rgba(63, 81, 181, 0.6);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #c5cae9, #9fa8da);
+    padding: 30px;
+    margin-top: 40px;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.05);
+}
